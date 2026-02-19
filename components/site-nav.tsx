@@ -1,6 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ThemeToggle } from "@/components/theme-toggle";
-import { Code2 } from "lucide-react";
 
 export function SiteNav() {
   return (
@@ -11,17 +11,28 @@ export function SiteNav() {
             href="/"
             className="flex items-center gap-2 font-medium text-lg tracking-tighter"
           >
-            <span className="inline-flex h-8 w-8 items-center justify-center bg-muted rounded-lg">
-              <Code2 className="w-5 h-5" />
-            </span>
+            <Image
+              src="/black-logo.png"
+              alt="Humano y Agéntico"
+              width={32}
+              height={32}
+              className="h-8 w-auto dark:hidden"
+            />
+            <Image
+              src="/white-logo.png"
+              alt="Humano y Agéntico"
+              width={32}
+              height={32}
+              className="h-8 w-auto hidden dark:block"
+            />
             <span className="hidden sm:inline">humano.agentic</span>
           </Link>
         </div>
 
-        <nav className="flex items-center gap-6 text-sm">
+        <nav className="flex items-center gap-6 text-sm font-medium">
           <Link
             href="/blog"
-            className="text-muted-foreground hover:text-foreground transition-colors"
+            className="text-foreground/80 hover:text-foreground transition-colors"
           >
             Blog
           </Link>

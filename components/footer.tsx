@@ -9,7 +9,7 @@ export default function Footer() {
             <Code2 className="w-3.5 h-3.5" />
           </span>
           <p className="text-sm text-muted-foreground">
-            <span className="font-bold">AIKA</span> &copy;{" "}
+            <span className="font-bold">A\KA</span> &copy;{" "}
             {new Date().getFullYear()}
           </p>
         </div>

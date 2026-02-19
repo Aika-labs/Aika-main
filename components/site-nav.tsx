@@ -14,7 +14,7 @@ export function SiteNav() {
             <span className="inline-flex h-8 w-8 items-center justify-center bg-muted rounded-lg">
               <Code2 className="w-5 h-5" />
             </span>
-            <span className="hidden sm:inline font-bold text-xl">AIKA</span>
+            <span className="hidden sm:inline font-bold text-xl">A\KA</span>
           </Link>
         </div>
 

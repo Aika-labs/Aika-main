@@ -1,0 +1,4 @@
+config:
+  aika-main-infra:environment: dev
+  aika-main-infra:project_name: aika-main
+  github:repo: Aika-labs/Aika-main

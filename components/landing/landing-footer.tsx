@@ -123,7 +123,7 @@ export function LandingFooter() {
             <Code2 className="w-3.5 h-3.5" />
           </span>
           <span className="text-xs font-medium tracking-tight text-muted-foreground">
-            <span className="font-bold">AIKA</span> &copy; 2025
+            <span className="font-bold">A\KA</span> &copy; 2025
           </span>
         </div>
         <p className="text-xs text-muted-foreground">

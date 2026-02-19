@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { Code2 } from "lucide-react";
 
 export function SiteNav() {
   return (
@@ -9,23 +9,12 @@ export function SiteNav() {
         <div className="flex items-center gap-2">
           <Link
             href="/"
-            className="flex items-center gap-2 font-medium text-lg tracking-tighter"
+            className="flex items-center gap-2 text-lg tracking-tighter"
           >
-            <Image
-              src="/black-logo.png"
-              alt="Humano y Agéntico"
-              width={32}
-              height={32}
-              className="h-8 w-auto dark:hidden"
-            />
-            <Image
-              src="/white-logo.png"
-              alt="Humano y Agéntico"
-              width={32}
-              height={32}
-              className="h-8 w-auto hidden dark:block"
-            />
-            <span className="hidden sm:inline">humano.agentic</span>
+            <span className="inline-flex h-8 w-8 items-center justify-center bg-muted rounded-lg">
+              <Code2 className="w-5 h-5" />
+            </span>
+            <span className="hidden sm:inline font-bold text-xl">AIKA</span>
           </Link>
         </div>
 

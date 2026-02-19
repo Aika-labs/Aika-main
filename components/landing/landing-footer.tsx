@@ -1,6 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
-import { Mail, Phone, Camera, Twitter, Linkedin } from "lucide-react";
+import { Mail, Phone, Code2, Camera, Twitter, Linkedin } from "lucide-react";
 
 export function LandingFooter() {
   return (
@@ -120,22 +119,11 @@ export function LandingFooter() {
       </div>
       <div className="mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2">
-          <Image
-            src="/black-logo.png"
-            alt="Humano y Agéntico"
-            width={20}
-            height={20}
-            className="h-5 w-auto dark:hidden"
-          />
-          <Image
-            src="/white-logo.png"
-            alt="Humano y Agéntico"
-            width={20}
-            height={20}
-            className="h-5 w-auto hidden dark:block"
-          />
+          <span className="inline-flex h-6 w-6 items-center justify-center text-muted-foreground bg-muted rounded">
+            <Code2 className="w-3.5 h-3.5" />
+          </span>
           <span className="text-xs font-medium tracking-tight text-muted-foreground">
-            humano.agentic &copy; 2025
+            <span className="font-bold">AIKA</span> &copy; 2025
           </span>
         </div>
         <p className="text-xs text-muted-foreground">

@@ -1,0 +1,11 @@
+name: aika-main-infra
+description: Infrastructure for Aika-main website - Vercel deployment
+runtime:
+  name: python
+  options:
+    toolchain: pip
+    virtualenv: venv
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: python

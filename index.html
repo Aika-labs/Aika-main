@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Humano y Agéntico — Software Development</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+        /* Custom scrollbar to match the dark aesthetic */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background-color: #52525b; border-radius: 20px; }
+    </style>
+</head>
+<body class="antialiased bg-zinc-50 text-zinc-900 selection:bg-zinc-900 selection:text-white">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-40 bg-zinc-50/80 backdrop-blur-md border-b border-zinc-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center gap-2">
+            <span class="inline-flex h-8 w-8 items-center justify-center text-zinc-900 bg-zinc-200 rounded-lg">
+                <iconify-icon icon="solar:code-square-linear" width="20" stroke-width="1.5"></iconify-icon>
+            </span>
+            <span class="text-lg font-medium tracking-tight text-zinc-900">humano.agentic</span>
+          </div>
+          <nav class="hidden md:flex items-center gap-8 text-sm">
+            <a href="#" class="text-zinc-600 hover:text-zinc-900 font-normal transition-colors">Capacidades</a>
+            <a href="#" class="text-zinc-600 hover:text-zinc-900 font-normal transition-colors">Ecosistema</a>
+            <a href="#" class="text-zinc-600 hover:text-zinc-900 font-normal transition-colors">Soluciones</a>
+            <a href="#" class="text-zinc-600 hover:text-zinc-900 font-normal transition-colors">Contacto</a>
+          </nav>
+          <button class="md:hidden inline-flex h-9 w-9 items-center justify-center rounded-lg border border-zinc-200 bg-white text-zinc-900">
+            <iconify-icon icon="solar:hamburger-menu-linear" width="20"></iconify-icon>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 flex flex-col gap-8 sm:gap-16">
+
+      <!-- Hero Section -->
+      <section class="relative overflow-hidden h-[65vh] sm:h-[70vh] bg-zinc-900 border-zinc-800 border rounded-3xl group">
+        <!-- Abstract Tech Background -->
+        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&amp;w=3270&amp;auto=format&amp;fit=crop" alt="Abstract Tech" class="absolute inset-0 w-full h-full object-center object-cover opacity-60 mix-blend-overlay transition-transform duration-1000 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/60 to-transparent"></div>
+        <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 sm:px-6">
+          <div class="max-w-3xl space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm text-xs text-white/90 font-medium mb-2">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                Desarrollo de Software Humano y Agéntico
+            </div>
+            <h1 class="text-5xl sm:text-7xl lg:text-8xl font-medium text-white tracking-tighter leading-[0.95] text-balance">
+              Humano y Agéntico
+            </h1>
+            <p class="text-lg sm:text-xl font-normal text-zinc-300 tracking-tight max-w-2xl mx-auto leading-relaxed text-pretty">
+              Transformamos el futuro digital construyendo sistemas de inteligencia artificial y plataformas de grado mundial para escalar negocios.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-4">
+              <button class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white text-zinc-900 text-sm font-medium hover:bg-zinc-100 transition shadow-lg shadow-white/5">
+                Explorar Ecosistema
+                <iconify-icon icon="solar:arrow-right-linear" width="18"></iconify-icon>
+              </button>
+              <button class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-zinc-800/50 backdrop-blur text-white border border-white/10 text-sm font-medium hover:bg-zinc-800 transition">
+                Capacidades
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Capabilities Grid -->
+      <section>
+        <div class="flex flex-col sm:flex-row items-start justify-between gap-4 mb-8">
+            <h2 class="text-2xl sm:text-3xl font-medium tracking-tight text-zinc-900 max-w-lg leading-tight">
+                Infraestructura inteligente para la próxima generación web.
+            </h2>
+            <span class="text-xs font-medium uppercase tracking-widest text-zinc-400 pt-2">Capacidades</span>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+          <!-- Card 01: Agentes IA -->
+          <article class="relative group h-72 border border-zinc-200 bg-white rounded-2xl p-6 flex flex-col justify-between overflow-hidden hover:border-zinc-300 transition-colors shadow-sm">
+            <div class="absolute top-0 right-0 p-6 opacity-40 group-hover:opacity-100 transition-opacity">
+                <iconify-icon icon="solar:cpu-bolt-linear" width="32" class="text-zinc-900"></iconify-icon>
+            </div>
+            <div class="mt-auto relative z-10">
+              <h3 class="text-lg font-medium tracking-tight text-zinc-900 mb-2">Agentes IA</h3>
+              <p class="text-sm text-zinc-500 leading-relaxed">Sistemas autónomos capaces de razonar, planificar y ejecutar tareas complejas.</p>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-br from-zinc-50/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          </article>
+
+          <!-- Card 02: SaaS & Platforms -->
+          <article class="relative group h-72 border border-zinc-200 bg-white rounded-2xl p-6 flex flex-col justify-between overflow-hidden hover:border-zinc-300 transition-colors shadow-sm">
+             <div class="absolute top-0 right-0 p-6 opacity-40 group-hover:opacity-100 transition-opacity">
+                <iconify-icon icon="solar:layers-minimalistic-linear" width="32" class="text-zinc-900"></iconify-icon>
+            </div>
+            <div class="mt-auto relative z-10">
+              <h3 class="text-lg font-medium tracking-tight text-zinc-900 mb-2">SaaS &amp; Platforms</h3>
+              <p class="text-sm text-zinc-500 leading-relaxed">Arquitectura multi-tenant escalable diseñada para alta disponibilidad y rendimiento.</p>
+            </div>
+          </article>
+
+          <!-- Card 03: RAG -->
+          <article class="relative group h-72 border border-zinc-200 bg-white rounded-2xl p-6 flex flex-col justify-between overflow-hidden hover:border-zinc-300 transition-colors shadow-sm">
+             <div class="absolute top-0 right-0 p-6 opacity-40 group-hover:opacity-100 transition-opacity">
+                <iconify-icon icon="solar:database-linear" width="32" class="text-zinc-900"></iconify-icon>
+            </div>
+            <div class="mt-auto relative z-10">
+              <h3 class="text-lg font-medium tracking-tight text-zinc-900 mb-2">RAG &amp; Vector Search</h3>
+              <p class="text-sm text-zinc-500 leading-relaxed">Sistemas de búsqueda semántica y recuperación de información contextual.</p>
+            </div>
+          </article>
+
+          <!-- Card 04: Chat Automation -->
+          <article class="relative group h-72 border border-zinc-200 bg-white rounded-2xl p-6 flex flex-col justify-between overflow-hidden hover:border-zinc-300 transition-colors shadow-sm">
+             <div class="absolute top-0 right-0 p-6 opacity-40 group-hover:opacity-100 transition-opacity">
+                <iconify-icon icon="solar:chat-square-code-linear" width="32" class="text-zinc-900"></iconify-icon>
+            </div>
+            <div class="mt-auto relative z-10">
+              <h3 class="text-lg font-medium tracking-tight text-zinc-900 mb-2">Chat Automation</h3>
+              <p class="text-sm text-zinc-500 leading-relaxed">Integraciones profundas con WhatsApp y canales de mensajería empresarial.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Ecosystem Section -->
+      <section class="sm:p-8 bg-zinc-50 border border-zinc-200 rounded-3xl pt-8 pb-8 px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <!-- Left: Heading + copy -->
+          <div class="flex flex-col justify-between h-full">
+            <div>
+              <span class="text-sm text-zinc-500 font-medium">Ecosistema</span>
+              <h2 class="text-4xl sm:text-5xl lg:text-6xl font-medium text-zinc-900 tracking-tighter mt-3 leading-[1]">
+                Nuestros productos y plataformas activas.
+              </h2>
+
+              <div class="mt-8 flex flex-col gap-6">
+                 <p class="text-base text-zinc-600 font-normal leading-relaxed max-w-md">
+                    Desplegamos soluciones que combinan lo mejor de la ingeniería de software tradicional con las capacidades emergentes de los modelos de lenguaje.
+                 </p>
+                 <div>
+                    <button class="inline-flex items-center gap-2 h-10 px-5 rounded-full bg-zinc-900 text-white text-sm font-medium hover:bg-zinc-800 transition">
+                        Ver todo
+                        <iconify-icon icon="solar:arrow-right-up-linear" width="16"></iconify-icon>
+                    </button>
+                 </div>
+              </div>
+            </div>
+
+            <div class="mt-auto pt-10 hidden lg:block">
+                <div class="flex items-center gap-4 text-xs text-zinc-400 font-medium uppercase tracking-wider">
+                    <span class="flex items-center gap-1"><iconify-icon icon="solar:check-circle-linear"></iconify-icon> Scalable</span>
+                    <span class="flex items-center gap-1"><iconify-icon icon="solar:check-circle-linear"></iconify-icon> Secure</span>
+                    <span class="flex items-center gap-1"><iconify-icon icon="solar:check-circle-linear"></iconify-icon> Intelligent</span>
+                </div>
+            </div>
+          </div>
+
+          <!-- Right: Product Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+            <!-- Agent OS -->
+            <article class="group relative flex flex-col bg-white border border-zinc-200 rounded-2xl p-5 hover:border-zinc-300 transition-all h-[240px]">
+              <div class="flex justify-between items-start mb-2">
+                <span class="text-xs font-semibold text-zinc-500 uppercase tracking-wider">Infraestructura</span>
+                <iconify-icon icon="solar:server-path-linear" width="20" class="text-zinc-400 group-hover:text-zinc-900 transition-colors"></iconify-icon>
+              </div>
+              <h3 class="text-xl font-medium text-zinc-900 tracking-tight">Agent OS</h3>
+              <p class="mt-2 text-sm text-zinc-500 leading-relaxed line-clamp-3">Plataforma full-stack para construir, desplegar y gestionar agentes de IA a escala. Control plane unificado.</p>
+              <div class="mt-auto flex flex-wrap gap-2 pt-4">
+                <span class="px-2 py-1 bg-zinc-100 text-[10px] font-medium text-zinc-600 rounded">GCP</span>
+                <span class="px-2 py-1 bg-zinc-100 text-[10px] font-medium text-zinc-600 rounded">Python</span>
+                <span class="px-2 py-1 bg-zinc-100 text-[10px] font-medium text-zinc-600 rounded">Docker</span>
+              </div>
+            </article>
+
+            <!-- Doci -->
+            <article class="group relative flex flex-col bg-white border border-zinc-200 rounded-2xl p-5 hover:border-zinc-300 transition-all h-[240px]">
+              <div class="flex justify-between items-start mb-2">
+                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">HealthTech</span>
+                <iconify-icon icon="solar:stethoscope-linear" width="20" class="text-zinc-400 group-hover:text-zinc-900 transition-colors"></iconify-icon>
+              </div>
+              <h3 class="text-xl font-medium text-zinc-900 tracking-tight">Doci</h3>
+              <p class="mt-2 text-sm text-zinc-500 leading-relaxed line-clamp-3">Sistema de Historia Clínica Electrónica (EHR) con transcripción de voz por IA para el mercado latinoamericano.</p>
+              <div class="mt-auto flex flex-wrap gap-2 pt-4">
+                <span class="px-2 py-1 bg-zinc-100 text-[10px] font-medium text-zinc-600 rounded">Whisper</span>
+                <span class="px-2 py-1 bg-zinc-100 text-[10px] font-medium text-zinc-600 rounded">React</span>
+              </div>
+            </article>
+
+            <!-- Todi -->
+            <article class="group relative flex flex-col bg-white border border-zinc-200 rounded-2xl p-5 hover:border-zinc-300 transition-all h-[240px]">
+              <div class="flex justify-between items-start mb-2">
+                <span class="text-xs font-semibold text-blue-600 uppercase tracking-wider">Marketplace</span>
+                <iconify-icon icon="solar:shop-linear" width="20" class="text-zinc-400 group-hover:text-zinc-900 transition-colors"></iconify-icon>
+              </div>
+              <h3 class="text-xl font-medium text-zinc-900 tracking-tight">Todi</h3>
+              <p class="mt-2 text-sm text-zinc-500 leading-relaxed line-clamp-3">Marketplace impulsado por IA que conecta consumidores con proveedores vía WhatsApp. Búsqueda semántica.</p>
+              <div class="mt-auto flex flex-wrap gap-2 pt-4">
+                <span class="px-2 py-1 bg-zinc-100 text-[10px] font-medium text-zinc-600 rounded">Pgvector</span>
+                <span class="px-2 py-1 bg-zinc-100 text-[10px] font-medium text-zinc-600 rounded">WhatsApp API</span>
+              </div>
+            </article>
+
+            <!-- LatamVault -->
+            <article class="group relative flex flex-col bg-white border border-zinc-200 rounded-2xl p-5 hover:border-zinc-300 transition-all h-[240px]">
+              <div class="flex justify-between items-start mb-2">
+                <span class="text-xs font-semibold text-amber-600 uppercase tracking-wider">Directory</span>
+                <iconify-icon icon="solar:folder-with-files-linear" width="20" class="text-zinc-400 group-hover:text-zinc-900 transition-colors"></iconify-icon>
+              </div>
+              <h3 class="text-xl font-medium text-zinc-900 tracking-tight">LatamVault</h3>
+              <p class="mt-2 text-sm text-zinc-500 leading-relaxed line-clamp-3">Directorio comercial semántico para la web agéntica. Descubrimiento vía protocolos MCP.</p>
+              <div class="mt-auto flex flex-wrap gap-2 pt-4">
+                <span class="px-2 py-1 bg-zinc-100 text-[10px] font-medium text-zinc-600 rounded">MCP</span>
+                <span class="px-2 py-1 bg-zinc-100 text-[10px] font-medium text-zinc-600 rounded">A2A Protocol</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Advanced Solutions (Dark Mode Section) -->
+      <section class="sm:p-8 bg-zinc-900 border-zinc-800 border rounded-3xl pt-8 pb-8 px-6 text-white overflow-hidden relative">
+        <div class="absolute top-0 right-0 p-10 opacity-10 pointer-events-none">
+            <iconify-icon icon="solar:code-scan-linear" width="300"></iconify-icon>
+        </div>
+        <div class="mb-10 max-w-2xl">
+          <div class="flex items-center gap-2 text-sm text-zinc-400 mb-2">
+            <iconify-icon icon="solar:stars-minimalistic-linear" width="16"></iconify-icon>
+            <span class="font-medium">Soluciones Especializadas</span>
+          </div>
+          <h2 class="text-4xl sm:text-6xl font-medium tracking-tight text-white leading-[1]">
+            Verticales &amp; Plataformas.
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+          <!-- Chati -->
+          <article class="bg-zinc-800/50 border border-zinc-700/50 rounded-2xl p-6 flex flex-col h-full hover:bg-zinc-800 transition-colors">
+            <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-semibold text-indigo-400 bg-indigo-400/10 px-2 py-1 rounded">SaaS</span>
+                <iconify-icon icon="solar:chat-round-line-linear" class="text-zinc-400" width="24"></iconify-icon>
+            </div>
+            <h3 class="text-2xl font-medium tracking-tight text-white mb-2">Chati</h3>
+            <p class="text-sm text-zinc-400 leading-relaxed mb-6">Plataforma SaaS multi-tenant para automatización de WhatsApp con IA, CRM y gestión de calendario.</p>
+            <div class="mt-auto flex flex-wrap gap-2">
+                <span class="text-[10px] border border-zinc-700 text-zinc-400 px-2 py-1 rounded-full">Multi-tenant</span>
+                <span class="text-[10px] border border-zinc-700 text-zinc-400 px-2 py-1 rounded-full">RAG</span>
+            </div>
+          </article>
+
+          <!-- PropAI -->
+          <article class="bg-zinc-800/50 border border-zinc-700/50 rounded-2xl p-6 flex flex-col h-full hover:bg-zinc-800 transition-colors">
+            <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-semibold text-cyan-400 bg-cyan-400/10 px-2 py-1 rounded">PropTech</span>
+                <iconify-icon icon="solar:city-linear" class="text-zinc-400" width="24"></iconify-icon>
+            </div>
+            <h3 class="text-2xl font-medium tracking-tight text-white mb-2">PropAI</h3>
+            <p class="text-sm text-zinc-400 leading-relaxed mb-6">Plataforma inmobiliaria con IA para Venezuela. Búsqueda conversacional y analytics para agentes.</p>
+            <div class="mt-auto flex flex-wrap gap-2">
+                <span class="text-[10px] border border-zinc-700 text-zinc-400 px-2 py-1 rounded-full">GPT-4o</span>
+                <span class="text-[10px] border border-zinc-700 text-zinc-400 px-2 py-1 rounded-full">Analytics</span>
+            </div>
+          </article>
+
+          <!-- Insurespond -->
+          <article class="bg-zinc-800/50 border border-zinc-700/50 rounded-2xl p-6 flex flex-col h-full hover:bg-zinc-800 transition-colors">
+            <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-semibold text-rose-400 bg-rose-400/10 px-2 py-1 rounded">InsurTech</span>
+                <iconify-icon icon="solar:shield-check-linear" class="text-zinc-400" width="24"></iconify-icon>
+            </div>
+            <h3 class="text-2xl font-medium tracking-tight text-white mb-2">Insurespond</h3>
+            <p class="text-sm text-zinc-400 leading-relaxed mb-6">CRM multi-tenant especializado para agencias de seguros. Automatización de pólizas y seguimiento.</p>
+            <div class="mt-auto flex flex-wrap gap-2">
+                <span class="text-[10px] border border-zinc-700 text-zinc-400 px-2 py-1 rounded-full">CRM</span>
+                <span class="text-[10px] border border-zinc-700 text-zinc-400 px-2 py-1 rounded-full">Auto</span>
+            </div>
+          </article>
+
+          <!-- Project Titan -->
+          <article class="bg-zinc-800/50 border border-zinc-700/50 rounded-2xl p-6 flex flex-col h-full hover:bg-zinc-800 transition-colors">
+            <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-semibold text-orange-400 bg-orange-400/10 px-2 py-1 rounded">SportsTech</span>
+                <iconify-icon icon="solar:dumbbell-large-linear" class="text-zinc-400" width="24"></iconify-icon>
+            </div>
+            <h3 class="text-2xl font-medium tracking-tight text-white mb-2">Project Titan</h3>
+            <p class="text-sm text-zinc-400 leading-relaxed mb-6">Sistema de inteligencia deportiva con simulaciones automatizadas para MLB, NBA y ligas europeas.</p>
+            <div class="mt-auto flex flex-wrap gap-2">
+                <span class="text-[10px] border border-zinc-700 text-zinc-400 px-2 py-1 rounded-full">Data</span>
+                <span class="text-[10px] border border-zinc-700 text-zinc-400 px-2 py-1 rounded-full">AI Sim</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="sm:p-8 bg-white border-zinc-200 border rounded-3xl px-6 py-10 shadow-sm">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+          <!-- CTA -->
+          <div class="flex flex-col justify-between">
+            <div>
+                <h3 class="text-4xl sm:text-5xl font-medium text-zinc-900 tracking-tighter leading-[1.05]">
+                  Hablemos de tu próximo proyecto
+                </h3>
+                <p class="mt-4 text-lg text-zinc-500 font-normal leading-relaxed max-w-md">
+                    ¿Tienes una idea ambiciosa? Nuestro equipo de expertos en IA y desarrollo está listo para construirla.
+                </p>
+            </div>
+
+            <div class="mt-8 flex flex-wrap gap-4">
+                <a href="mailto:hello@humano-agentic.com" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-zinc-900 text-white text-sm font-medium hover:bg-zinc-800 transition">
+                    <iconify-icon icon="solar:letter-linear" width="18"></iconify-icon>
+                    Enviar Email
+                </a>
+                <a href="#" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white border border-zinc-200 text-zinc-900 text-sm font-medium hover:bg-zinc-50 transition">
+                    <iconify-icon icon="solar:phone-calling-linear" width="18"></iconify-icon>
+                    WhatsApp
+                </a>
+            </div>
+          </div>
+
+          <!-- Links -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-8 border-t lg:border-t-0 border-zinc-100 pt-8 lg:pt-0">
+             <div>
+                <p class="text-xs font-semibold text-zinc-400 uppercase tracking-widest mb-4">Empresa</p>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#" class="text-zinc-600 hover:text-zinc-900 transition-colors">Sobre Nosotros</a></li>
+                    <li><a href="#" class="text-zinc-600 hover:text-zinc-900 transition-colors">Carreras</a></li>
+                    <li><a href="#" class="text-zinc-600 hover:text-zinc-900 transition-colors">Blog</a></li>
+                </ul>
+             </div>
+             <div>
+                <p class="text-xs font-semibold text-zinc-400 uppercase tracking-widest mb-4">Legal</p>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#" class="text-zinc-600 hover:text-zinc-900 transition-colors">Privacidad</a></li>
+                    <li><a href="#" class="text-zinc-600 hover:text-zinc-900 transition-colors">Términos</a></li>
+                </ul>
+             </div>
+             <div class="col-span-2 sm:col-span-1">
+                <p class="text-xs font-semibold text-zinc-400 uppercase tracking-widest mb-4">Social</p>
+                <div class="flex gap-4">
+                    <a href="#" class="text-zinc-400 hover:text-zinc-900 transition-colors"><iconify-icon icon="solar:camera-linear" width="20"></iconify-icon></a>
+                    <a href="#" class="text-zinc-400 hover:text-zinc-900 transition-colors"><iconify-icon icon="brandico:twitter-bird" width="20"></iconify-icon></a>
+                    <a href="#" class="text-zinc-400 hover:text-zinc-900 transition-colors"><iconify-icon icon="brandico:linkedin" width="20"></iconify-icon></a>
+                </div>
+             </div>
+          </div>
+        </div>
+        <div class="mt-12 pt-6 border-t border-zinc-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-2">
+            <span class="inline-flex h-6 w-6 items-center justify-center text-zinc-500 bg-zinc-100 rounded">
+                <iconify-icon icon="solar:code-square-linear" width="14"></iconify-icon>
+            </span>
+            <span class="text-xs font-medium tracking-tight text-zinc-500">humano.agentic © 2025</span>
+          </div>
+          <p class="text-xs text-zinc-400">Diseñado con inteligencia.</p>
+        </div>
+      </footer>
+
+    </main>
+</body>
+</html>

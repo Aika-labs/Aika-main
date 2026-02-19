@@ -1,0 +1,6 @@
+config:
+  aika-main-infra:environment: dev
+  aika-main-infra:project_name: aika-main
+  github:repo: Aika-labs/Aika-main
+  vercel:apiToken:
+    secure: AAABAJdXqCTayJW5vajuH+qGdkCAoebw7CasKju5e/bP+07VyJcCeZlNCpoWUskg9CVCJVurvz1Q0/5H7JtOl+qFcEZ3KkTu70beZ2xKX0lUgL4D+IMJf0o6Gjs=

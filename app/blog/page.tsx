@@ -2,6 +2,8 @@ import { docs, meta } from "@/.source";
 import { loader } from "fumadocs-core/source";
 import { createMDXSource } from "fumadocs-mdx";
 import { Suspense } from "react";
+import Link from "next/link";
+import { PenLine } from "lucide-react";
 import { BlogCard } from "@/components/blog-card";
 import { TagFilter } from "@/components/tag-filter";
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
@@ -87,13 +89,22 @@ export default async function BlogPage({
       </div>
       <div className="p-6 border-b border-border flex flex-col gap-6 min-h-[250px] justify-center relative z-10">
         <div className="max-w-7xl mx-auto w-full">
-          <div className="flex flex-col gap-2">
-            <h1 className="font-medium text-4xl md:text-5xl tracking-tighter">
-              Blog
-            </h1>
-            <p className="text-muted-foreground text-sm md:text-base lg:text-lg">
-              Últimas noticias, tutoriales e insights sobre IA y desarrollo de software.
-            </p>
+          <div className="flex items-start justify-between gap-4">
+            <div className="flex flex-col gap-2">
+              <h1 className="font-medium text-4xl md:text-5xl tracking-tighter">
+                Blog
+              </h1>
+              <p className="text-muted-foreground text-sm md:text-base lg:text-lg">
+                Últimas noticias, tutoriales e insights sobre IA y desarrollo de software.
+              </p>
+            </div>
+            <Link
+              href="/blog/new"
+              className="shrink-0 inline-flex items-center gap-2 h-9 px-4 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition"
+            >
+              <PenLine className="w-4 h-4" />
+              <span className="hidden sm:inline">Escribir</span>
+            </Link>
           </div>
         </div>
         {allTags.length > 0 && (
